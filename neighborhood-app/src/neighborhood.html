@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>
+    Finding a Neighborhood
+</title>
+<meta charset="UTF-8">
+<head>
+    <script type="text/javascript" src="./neighborhood.js">
+
+    </script>
+</head>
+
+<body>
+
+    <h2>Finding a Neighborhood</h2>
+
+    <form id="xyForm" name="xyForm" onsubmit="return false">
+        <label for="rows">Rows:</label><br>
+        <input type="text" id="rows" name="rows" onblur="setX()"><br>
+        <label for="cols">Columns:</label><br>
+        <input type="text" id="cols" name="cols" onblur="setY()"><br>
+        <label for="x">Enter an XxY matrix based on the values provided:</label><br>
+        <textarea id="xy" name="xy"></textarea><br>
+        <br>
+        <input type="submit" value="Submit" onclick="findPath();return false;">
+        <input type="reset">
+    </form>
+    <label>Largest Collection Size:</label><br>
+    <label id="largest"></label><br>
+    <label>Smallest Collection Size:</label><br>
+    <label id="smallest"></label><br>
+    
+</body>
+
+</html>
